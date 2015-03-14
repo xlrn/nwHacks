@@ -1,8 +1,11 @@
 package com.example.nelson.carbongame;
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 import android.widget.Chronometer;
 import java.util.concurrent.TimeUnit;
 public class MainActivity extends ActionBarActivity {
@@ -19,6 +22,12 @@ public class MainActivity extends ActionBarActivity {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_main, menu);
         return true;
+    }
+
+    public void buttonOnClick (View v ) {
+        Button button = (Button) v;
+        startActivity (new Intent(getApplicationContext(), Activity2.class));
+
     }
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
