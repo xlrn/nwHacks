@@ -4,7 +4,7 @@ import android.text.format.Time;
 /**
  * Created by Jennifer on 2015-03-13.
  */
-public abstract class TimeBased implements ScoreCalc{
+public abstract class TimeBased {
     private static int rate;
     private static int init;
     //private Time startTime;

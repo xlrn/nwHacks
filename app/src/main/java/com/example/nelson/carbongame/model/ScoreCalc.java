@@ -3,7 +3,11 @@ package com.example.nelson.carbongame.model;
 /**
  * Created by Jennifer on 2015-03-13.
  */
-public interface ScoreCalc {
+public class ScoreCalc {
+    private static int baseLine;
+
+    }
+
 
 
 }
