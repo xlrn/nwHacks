@@ -1,4 +1,4 @@
-package com.example.nelson.carbongame;
+package com.example.nelson.carbongame.UI;
 import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
@@ -7,6 +7,10 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Chronometer;
+
+import com.example.nelson.carbongame.R;
+import com.example.nelson.carbongame.UI.Activity2;
+
 import java.util.concurrent.TimeUnit;
 public class MainActivity extends ActionBarActivity {
     private Chronometer chronometer;
