@@ -29,8 +29,18 @@ public class MainActivity extends ActionBarActivity {
         totalScore = Score.getScore();
         setTheScore();
 
+        Button button = (Button) findViewById(R.id.button3);
+        button.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent intent = new Intent(v.getContext(), Activity2.class);
+                startActivityForResult(intent, 0);
+            }
+        });
+
 
     }
+
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
@@ -40,7 +50,7 @@ public class MainActivity extends ActionBarActivity {
 
     public void buttonOnClick (View v ) {
         Button button = (Button) v;
-        startActivity(new Intent(getApplicationContext(), Activity2.class));
+        startActivity(new Intent(this, Activity2.class));
     }
 
     @Override
@@ -78,5 +88,11 @@ public class MainActivity extends ActionBarActivity {
             setTheScore();
             ButtonYesNo.Button1 = false;
         }
+    }
+
+    public void PaperButton (View v) {
+        Button button = (Button) v;
+        Score.calculateScore(2);
+        setTheScore();
     }
 }
