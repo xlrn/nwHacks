@@ -6,10 +6,13 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Chronometer;
 
+import java.util.concurrent.TimeUnit;
+
 
 public class MainActivity extends ActionBarActivity {
 
     private Chronometer chronometer;
+    private long startingTime;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,4 +43,18 @@ public class MainActivity extends ActionBarActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
+    public void startChronometer() {
+        startingTime = System.currentTimeMillis();
+        chronometer.setBase(System.currentTimeMillis());
+        chronometer.start();
+    }
+
+    public void stopChronometer() {
+        if (System.currentTimeMillis() == (startingTime + TimeUnit.HOURS.toMillis(24))) {
+            chronometer.stop();
+        }
+    }
+
+
 }
