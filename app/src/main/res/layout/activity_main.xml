@@ -35,12 +35,13 @@
         android:id="@+id/button9"
         android:layout_alignTop="@+id/button8"
         android:layout_alignLeft="@+id/button6"
-        android:layout_gravity="right|bottom" />
+        android:layout_gravity="right|bottom"
+        android:onClick="PlantsButton" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="appliance"
+        android:text="New Button"
         android:id="@+id/button3"
         android:layout_alignTop="@+id/button2"
         android:layout_alignParentRight="true"
@@ -118,7 +119,8 @@
         android:layout_alignTop="@+id/button7"
         android:layout_alignLeft="@+id/button5"
         android:layout_alignStart="@+id/button5"
-        android:layout_gravity="center_horizontal|bottom" />
+        android:layout_gravity="center_horizontal|bottom"
+        android:onClick="CansButton" />
 
     <ImageView
         android:layout_width="70dp"
@@ -146,7 +148,8 @@
         android:layout_gravity="left|top"
         android:layout_above="@+id/imageView4"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:onClick="LightButton" />
 
     <Chronometer
         android:layout_width="wrap_content"
@@ -221,6 +224,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/chronometer4"
         android:layout_alignRight="@+id/imageView8"
+        android:layout_toLeftOf="@+id/button2"
         android:layout_below="@+id/button4"
         android:layout_alignLeft="@+id/chronometer2" />
 
@@ -264,9 +268,10 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="SCORE"
         android:id="@+id/scoretext"
+        android:singleLine="true"
         android:layout_above="@+id/imageView3"
-        android:layout_toLeftOf="@+id/imageView9"
-        android:singleLine="true" />
+        android:layout_toRightOf="@+id/button"
+        android:layout_marginBottom="44dp" />
 
     <Chronometer
         android:layout_width="wrap_content"
@@ -287,3 +292,4 @@
         android:layout_alignLeft="@+id/chronometer4" />
 
 </RelativeLayout>
+

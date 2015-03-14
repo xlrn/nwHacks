@@ -4,9 +4,91 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context="com.example.nelson.carbongame.UI.Activity2">
+    tools:context="com.example.nelson.carbongame.Activity2"
+    android:id="@+id/"
+    android:background="#FFFFFF">
 
-    <TextView android:text="@string/hello_world" android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+    <TextView android:text="TRANSPORTATION" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:textIsSelectable="false"
+        android:textSize="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#000000" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BUS"
+        android:id="@+id/button10"
+        android:layout_above="@+id/chronometer2"
+        android:layout_alignLeft="@+id/button11"
+        android:layout_alignStart="@+id/button11" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BIKE"
+        android:id="@+id/button11"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/button12"
+        android:layout_alignStart="@+id/button12" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WALK"
+        android:id="@+id/button12"
+        android:layout_below="@+id/chronometer3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp" />
+
+    <Chronometer
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/chronometer2"
+        android:layout_marginBottom="46dp"
+        android:textSize="20dp"
+        android:layout_above="@+id/button11"
+        android:layout_alignLeft="@+id/chronometer3"
+        android:layout_alignStart="@+id/chronometer3"
+        android:textColor="#000000" />
+
+    <Chronometer
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/chronometer3"
+        android:layout_below="@+id/button11"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp"
+        android:textColor="##000000" />
+
+    <Chronometer
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/chronometer4"
+        android:layout_alignTop="@+id/button12"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="43dp"
+        android:textSize="20dp"
+        android:textColor="#000000" />
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:id="@+id/imageView2"
+        android:src="@drawable/Prosecco_in_cans"
+        android:layout_above="@+id/chronometer2"
+        android:layout_toLeftOf="@+id/button10"
+        android:layout_toStartOf="@+id/button10" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton2"
+        android:layout_alignTop="@+id/chronometer2"
+        android:layout_toLeftOf="@+id/chronometer2"
+        android:layout_toStartOf="@+id/chronometer2" />
 
 </RelativeLayout>
