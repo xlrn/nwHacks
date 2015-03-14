@@ -54,8 +54,8 @@
         android:text="water"
         android:id="@+id/button5"
         android:layout_gravity="center"
-        android:layout_below="@+id/imageView4"
-        android:layout_centerHorizontal="true" />
+        android:layout_above="@+id/chronometer4"
+        android:layout_alignLeft="@+id/button2" />
 
     <Button
         android:layout_width="wrap_content"
@@ -63,9 +63,8 @@
         android:text="transit"
         android:id="@+id/button6"
         android:layout_gravity="right|center_vertical"
-        android:layout_below="@+id/imageView4"
-        android:layout_alignLeft="@+id/button3"
-        android:layout_alignStart="@+id/button3" />
+        android:layout_alignTop="@+id/button5"
+        android:layout_alignLeft="@+id/button3" />
 
     <Button
         android:layout_width="wrap_content"
@@ -73,7 +72,7 @@
         android:text="paper"
         android:id="@+id/button7"
         android:layout_gravity="left|bottom"
-        android:layout_above="@+id/ratingBar"
+        android:layout_centerVertical="true"
         android:layout_alignParentLeft="true" />
 
     <Button
@@ -82,34 +81,15 @@
         android:text="car"
         android:id="@+id/button4"
         android:layout_gravity="left|center_vertical"
-        android:layout_above="@+id/imageView8"
-        android:layout_alignRight="@+id/imageView8" />
+        android:layout_below="@+id/chronometer2"
+        android:layout_alignParentLeft="true" />
 
     <Chronometer
         android:layout_width="34dp"
         android:layout_height="39dp"
         android:id="@+id/chronometer2"
         android:layout_gravity="center_horizontal|bottom|right"
-        android:layout_below="@+id/button"
-        android:layout_alignRight="@+id/imageView4" />
-
-    <ImageView
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:id="@+id/imageView3"
-        android:src="@drawable/electricity"
-        android:layout_gravity="center_horizontal|top"
-        android:layout_above="@+id/button2"
-        android:layout_alignLeft="@+id/imageView6" />
-
-    <ImageView
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:id="@+id/imageView4"
-        android:src="@drawable/cars"
-        android:layout_gravity="center_vertical|left"
-        android:layout_above="@+id/button4"
-        android:layout_alignParentLeft="true" />
+        android:layout_below="@+id/button" />
 
     <Button
         android:layout_width="wrap_content"
@@ -122,22 +102,13 @@
         android:layout_gravity="center_horizontal|bottom"
         android:onClick="CansButton" />
 
-    <ImageView
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:id="@+id/imageView2"
-        android:src="@drawable/cans"
-        android:layout_gravity="center_horizontal|bottom"
-        android:layout_below="@+id/chronometer4"
-        android:layout_centerHorizontal="true" />
-
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="electricity"
         android:id="@+id/button2"
         android:layout_gravity="center|top"
-        android:layout_above="@+id/imageView4"
+        android:layout_above="@+id/chronometer2"
         android:layout_centerHorizontal="true" />
 
     <Button
@@ -146,10 +117,9 @@
         android:text="lights"
         android:id="@+id/button"
         android:layout_gravity="left|top"
-        android:layout_above="@+id/imageView4"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:onClick="LightButton" />
+        android:onClick="LightButton"
+        android:layout_below="@+id/scoretext"
+        android:layout_alignRight="@+id/scoretext" />
 
     <Chronometer
         android:layout_width="wrap_content"
@@ -161,72 +131,14 @@
         android:layout_marginLeft="35dp"
         android:layout_marginStart="35dp" />
 
-    <ImageView
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:id="@+id/imageView5"
-        android:src="@drawable/plant"
-        android:layout_above="@+id/button9"
-        android:layout_alignRight="@+id/button9"
-        android:layout_alignEnd="@+id/button9"
-        android:layout_alignLeft="@+id/button6"
-        android:layout_alignStart="@+id/button6" />
-
-    <ImageView
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:id="@+id/imageView6"
-        android:src="@drawable/water"
-        android:layout_below="@+id/chronometer"
-        android:layout_centerHorizontal="true" />
-
-    <ImageView
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:id="@+id/imageView7"
-        android:src="@drawable/bike"
-        android:layout_alignTop="@+id/imageView6"
-        android:layout_alignLeft="@+id/button6"
-        android:layout_alignRight="@+id/button6" />
-
-    <ImageView
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:id="@+id/imageView8"
-        android:src="@drawable/paper"
-        android:layout_above="@+id/button7"
-        android:layout_alignRight="@+id/button7" />
-
-    <ImageView
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:id="@+id/imageView9"
-        android:src="@drawable/appliances"
-        android:layout_alignBottom="@+id/imageView3"
-        android:layout_alignRight="@+id/imageView7"
-        android:layout_alignEnd="@+id/imageView7"
-        android:layout_alignLeft="@+id/button3"
-        android:layout_alignStart="@+id/button3"
-        android:layout_alignTop="@+id/imageView3"
-        android:layout_alignParentEnd="false" />
-
-    <ImageView
-        android:layout_width="70dp"
-        android:layout_height="70dp"
-        android:id="@+id/imageView10"
-        android:contentDescription="String"
-        android:src="@drawable/lights"
-        android:layout_above="@+id/button"
-        android:layout_alignLeft="@+id/button7" />
-
     <Chronometer
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/chronometer4"
-        android:layout_alignRight="@+id/imageView8"
         android:layout_toLeftOf="@+id/button2"
         android:layout_below="@+id/button4"
-        android:layout_alignLeft="@+id/chronometer2" />
+        android:layout_alignLeft="@+id/chronometer2"
+        android:layout_alignRight="@+id/button7" />
 
     <Chronometer
         android:layout_width="wrap_content"
@@ -241,8 +153,8 @@
         android:id="@+id/chronometer9"
         android:layout_alignParentBottom="true"
         android:layout_below="@+id/button8"
-        android:layout_alignRight="@+id/imageView2"
-        android:layout_alignLeft="@+id/chronometer5" />
+        android:layout_alignLeft="@+id/chronometer5"
+        android:layout_centerHorizontal="true" />
 
     <Chronometer
         android:layout_width="wrap_content"
@@ -269,17 +181,15 @@
         android:text="SCORE"
         android:id="@+id/scoretext"
         android:singleLine="true"
-        android:layout_above="@+id/imageView3"
-        android:layout_toRightOf="@+id/button"
-        android:layout_marginBottom="44dp" />
+        android:layout_marginTop="55dp"
+        android:layout_below="@+id/textView"
+        android:layout_toRightOf="@+id/chronometer2" />
 
     <Chronometer
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/chronometer8"
-        android:layout_alignRight="@+id/button9"
-        android:layout_alignParentBottom="true"
-        android:layout_below="@+id/button9"
+        android:layout_alignTop="@+id/chronometer9"
         android:layout_alignLeft="@+id/chronometer6" />
 
     <Chronometer
