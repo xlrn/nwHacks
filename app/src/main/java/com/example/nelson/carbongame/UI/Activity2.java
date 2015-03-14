@@ -1,9 +1,11 @@
-package com.example.nelson.carbongame;
+package com.example.nelson.carbongame.UI;
 
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+
+import com.example.nelson.carbongame.R;
 
 
 public class Activity2 extends ActionBarActivity {
