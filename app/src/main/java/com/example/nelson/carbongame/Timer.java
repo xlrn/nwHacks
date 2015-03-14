@@ -1,5 +1,7 @@
 package com.example.nelson.carbongame;
 
+import android.os.SystemClock;
+
 import java.util.concurrent.TimeUnit;
 
 /**
@@ -19,20 +21,29 @@ public class Timer {
     }
 
     // Get starting time
-    protected void startTimer() {
-        startTime = System.currentTimeMillis();
+    public void startTimer() {
+        startTime = SystemClock.elapsedRealtime();
     }
 
     // Get end time
-    protected void stopTimer() {
-        endTime = System.currentTimeMillis();
+    public void stopTimer() {
+        endTime = SystemClock.elapsedRealtime();
     }
 
     // Get duration in minutes
-    protected int getDuration() {
+    public int getDuration() {
+        endTime = SystemClock.elapsedRealtime();
         duration = endTime - startTime;
         long tempDur = TimeUnit.MILLISECONDS.toMinutes(duration);
         return (int)tempDur;
+    }
+
+    public void setStartTime(long n) {
+        startTime = n;
+    }
+
+    public void setEndTime(long n) {
+        endTime = n;
     }
 
 

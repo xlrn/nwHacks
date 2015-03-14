@@ -4,9 +4,18 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.TextView;
+
+import com.example.nelson.carbongame.model.LightSwitch;
 
 
-public class Transit extends ActionBarActivity {
+public class Lights extends ActionBarActivity {
+    public static Score lightScore;
+    public Timer TimeElapsed;
+    public LightSwitch daLights;
+    public TextView theScore;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,4 +45,5 @@ public class Transit extends ActionBarActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
 }

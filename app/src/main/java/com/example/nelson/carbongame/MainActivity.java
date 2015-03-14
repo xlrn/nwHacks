@@ -1,5 +1,6 @@
 package com.example.nelson.carbongame;
 import android.content.Intent;
+import android.os.SystemClock;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -7,19 +8,30 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Chronometer;
+import android.widget.TextView;
+
+import com.example.nelson.carbongame.model.LightSwitch;
+
 import java.util.concurrent.TimeUnit;
+
+import static com.example.nelson.carbongame.Lights.*;
+
 public class MainActivity extends ActionBarActivity {
 
 
-    private Chronometer chronometer;
-    private long startingTime;
+    private Chronometer chronometerLight;
+    public TextView theScore;
+    public int totalScore;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        chronometer = (Chronometer) findViewById(R.id.chronometer);
-        startChronometer();
+        chronometerLight = (Chronometer) findViewById(R.id.chronometer2);
+        totalScore = Score.getScore();
+        setTheScore();
+
+
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -30,9 +42,9 @@ public class MainActivity extends ActionBarActivity {
 
     public void buttonOnClick (View v ) {
         Button button = (Button) v;
-        startActivity(new Intent(getApplicationContext(), Transit.class));
-
+        startActivity(new Intent(getApplicationContext(), Lights.class));
     }
+
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle action bar item clicks here. The action bar will
@@ -45,14 +57,28 @@ public class MainActivity extends ActionBarActivity {
         }
         return super.onOptionsItemSelected(item);
     }
-    public void startChronometer() {
-        startingTime = System.currentTimeMillis();
-        chronometer.setBase(System.currentTimeMillis());
-        chronometer.start();
+
+
+    public void setTheScore() {
+        theScore = (TextView) findViewById(R.id.scoretext);
+        theScore.setText(Integer.toString(Score.getScore()));
     }
-    public void stopChronometer() {
-        if (System.currentTimeMillis() == (startingTime + TimeUnit.HOURS.toMillis(24))) {
-            chronometer.stop();
+
+    public void LightButton (View v) {
+        Button button = (Button) v;
+        Timer dur = new Timer();
+        if(LightSwitch.startStop == false) {
+            chronometerLight.setBase(SystemClock.elapsedRealtime());
+            chronometerLight.start();
+            dur.startTimer();
+            LightSwitch.startStop = true;
+        } else {
+            chronometerLight.stop();
+            chronometerLight.setBase(SystemClock.elapsedRealtime());
+            dur.stopTimer();
+            Score.calculateScore(-100);
+            setTheScore();
+            LightSwitch.startStop = false;
         }
     }
 }
