@@ -6,8 +6,6 @@ package com.example.nelson.carbongame.model;
 public class ScoreCalc {
     private static int baseLine;
 
-    }
-
 
 
 }
