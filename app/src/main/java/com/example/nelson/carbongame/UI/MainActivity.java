@@ -1,4 +1,4 @@
-package com.example.nelson.carbongame;
+package com.example.nelson.carbongame.UI;
 import android.content.Intent;
 import android.os.SystemClock;
 import android.support.v7.app.ActionBarActivity;
@@ -10,11 +10,9 @@ import android.widget.Button;
 import android.widget.Chronometer;
 import android.widget.TextView;
 
-import com.example.nelson.carbongame.model.LightSwitch;
-
-import java.util.concurrent.TimeUnit;
-
-import static com.example.nelson.carbongame.Lights.*;
+import com.example.nelson.carbongame.R;
+import com.example.nelson.carbongame.model.ButtonYesNo;
+import com.example.nelson.carbongame.model.Score;
 
 public class MainActivity extends ActionBarActivity {
 
@@ -42,7 +40,7 @@ public class MainActivity extends ActionBarActivity {
 
     public void buttonOnClick (View v ) {
         Button button = (Button) v;
-        startActivity(new Intent(getApplicationContext(), Lights.class));
+        startActivity(new Intent(getApplicationContext(), Activity2.class));
     }
 
     @Override
@@ -67,18 +65,18 @@ public class MainActivity extends ActionBarActivity {
     public void LightButton (View v) {
         Button button = (Button) v;
         Timer dur = new Timer();
-        if(LightSwitch.startStop == false) {
+        if(ButtonYesNo.Button1 == false) {
             chronometerLight.setBase(SystemClock.elapsedRealtime());
             chronometerLight.start();
             dur.startTimer();
-            LightSwitch.startStop = true;
+            ButtonYesNo.Button1 = true;
         } else {
             chronometerLight.stop();
             chronometerLight.setBase(SystemClock.elapsedRealtime());
             dur.stopTimer();
             Score.calculateScore(-100);
             setTheScore();
-            LightSwitch.startStop = false;
+            ButtonYesNo.Button1 = false;
         }
     }
 }
