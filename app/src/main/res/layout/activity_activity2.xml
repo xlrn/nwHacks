@@ -83,4 +83,12 @@
         android:layout_toLeftOf="@+id/button10"
         android:layout_toStartOf="@+id/button10" />
 
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButton2"
+        android:layout_alignTop="@+id/chronometer2"
+        android:layout_toLeftOf="@+id/chronometer2"
+        android:layout_toStartOf="@+id/chronometer2" />
+
 </RelativeLayout>
