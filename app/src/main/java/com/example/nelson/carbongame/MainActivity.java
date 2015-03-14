@@ -15,7 +15,7 @@ public class MainActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        chronometer = (Chronometer) findViewById(R.id.hours_left);
+        chronometer = (Chronometer) findViewById(R.id.chronometer);
     }
 
     // Testing comment
