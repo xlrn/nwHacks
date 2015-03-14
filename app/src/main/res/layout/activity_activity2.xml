@@ -5,7 +5,7 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context="com.example.nelson.carbongame.Activity2"
-    android:id="@+id/layout2"
+    android:id="@+id/name"
     android:background="#FFFFFF">
 
     <TextView android:text="TRANSPORTATION" android:layout_width="wrap_content"
