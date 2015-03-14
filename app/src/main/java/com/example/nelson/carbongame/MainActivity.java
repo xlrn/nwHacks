@@ -18,8 +18,7 @@ public class MainActivity extends ActionBarActivity {
         chronometer = (Chronometer) findViewById(R.id.chronometer);
     }
 
-    // Testing comment
-    // Timer Comment 2s
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.

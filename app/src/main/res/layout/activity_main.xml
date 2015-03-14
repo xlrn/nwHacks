@@ -65,7 +65,6 @@
     <ToggleButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-<<<<<<< HEAD
         android:text="New ToggleButton"
         android:id="@+id/toggleButton"
         android:layout_above="@+id/button3"
