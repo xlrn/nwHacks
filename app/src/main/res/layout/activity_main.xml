@@ -117,4 +117,22 @@
         android:layout_alignLeft="@+id/button9"
         android:layout_above="@+id/button9"
         android:layout_alignRight="@+id/button9" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageView"
+        android:layout_above="@+id/button7"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageView2"
+        android:src="@drawable/Prosecco_in_cans"
+        android:layout_below="@+id/button5"
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_alignRight="@+id/imageView"
+        android:layout_alignEnd="@+id/imageView" />
 </RelativeLayout>
