@@ -4,29 +4,47 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
-    android:id="@+id/name">
+    android:id="@+id/name"
+    android:background="#FFFFFF">
 
     <TextView android:text="5olution!" android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/textView" />
 
-    <Button
+    <RatingBar
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="lights"
-        android:id="@+id/button"
-        android:layout_marginTop="158dp"
-        android:layout_below="@+id/textView"
+        android:id="@+id/ratingBar"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_toStartOf="@+id/button9"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/button9" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageView"
+        android:layout_above="@+id/button7"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/mm-plant" />
+
+    <Chronometer
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/chronometer"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_below="@+id/button2"
+        android:layout_centerHorizontal="true" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="electricity"
-        android:id="@+id/button2"
-        android:layout_alignTop="@+id/button"
-        android:layout_centerHorizontal="true" />
+        android:text="plants"
+        android:id="@+id/button9"
+        android:layout_alignTop="@+id/button8"
+        android:layout_alignLeft="@+id/button6"
+        android:layout_gravity="right|bottom" />
 
     <Button
         android:layout_width="wrap_content"
@@ -35,55 +53,77 @@
         android:id="@+id/button3"
         android:layout_alignTop="@+id/button2"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="car"
-        android:id="@+id/button4"
-        android:layout_alignTop="@+id/button5"
-        android:layout_alignParentLeft="true" />
-
-    <Chronometer
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/chronometer"
-        android:layout_below="@+id/textView"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="40dp" />
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="center|right|top" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="water"
         android:id="@+id/button5"
-        android:layout_alignTop="@+id/button6"
-        android:layout_centerHorizontal="true" />
-
-    <ToggleButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="New ToggleButton"
-        android:id="@+id/toggleButton"
-        android:layout_alignTop="@+id/textView"
-        android:layout_alignParentRight="true" />
+        android:layout_gravity="center"
+        android:layout_below="@+id/imageView4"
+        android:layout_alignLeft="@+id/imageView"
+        android:layout_alignStart="@+id/imageView" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="transit"
         android:id="@+id/button6"
-        android:layout_above="@+id/plantimg"
-        android:layout_alignLeft="@+id/button3" />
+        android:layout_gravity="right|center_vertical"
+        android:layout_below="@+id/imageView4"
+        android:layout_alignLeft="@+id/button3"
+        android:layout_alignStart="@+id/button3" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="paper"
         android:id="@+id/button7"
+        android:layout_gravity="left|bottom"
         android:layout_above="@+id/ratingBar"
-        android:layout_alignParentLeft="true" />
+        android:layout_alignRight="@+id/chronometer2"
+        android:layout_alignEnd="@+id/chronometer2" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="car"
+        android:id="@+id/button4"
+        android:layout_gravity="left|center_vertical"
+        android:layout_alignTop="@+id/imageView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Chronometer
+        android:layout_width="34dp"
+        android:layout_height="39dp"
+        android:id="@+id/chronometer2"
+        android:layout_gravity="center_horizontal|bottom|right"
+        android:layout_below="@+id/button"
+        android:layout_alignRight="@+id/button4"
+        android:layout_alignEnd="@+id/button4" />
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:id="@+id/imageView3"
+        android:src="@drawable/electricity"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_above="@+id/button2"
+        android:layout_alignLeft="@+id/imageView6"
+        android:layout_alignStart="@+id/imageView6" />
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:id="@+id/imageView4"
+        android:src="@drawable/cars"
+        android:layout_gravity="center_vertical|left"
+        android:layout_above="@+id/button4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <Button
         android:layout_width="wrap_content"
@@ -92,72 +132,112 @@
         android:id="@+id/button8"
         android:layout_alignTop="@+id/button7"
         android:layout_alignLeft="@+id/button5"
-        android:layout_alignStart="@+id/button5" />
+        android:layout_alignStart="@+id/button5"
+        android:layout_gravity="center_horizontal|bottom" />
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:id="@+id/imageView2"
+        android:src="@drawable/Prosecco_in_cans"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_below="@+id/button5"
+        android:layout_alignLeft="@+id/imageView6"
+        android:layout_alignStart="@+id/imageView6" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Plants"
-        android:id="@+id/button9"
-        android:layout_alignTop="@+id/button8"
-        android:layout_alignLeft="@+id/button6" />
-
-    <RatingBar
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/ratingBar"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true" />
-
-    <ImageView
-        android:layout_width="90dp"
-        android:layout_height="90dp"
-        android:id="@+id/plantimg"
-        android:src="@drawable/sunflower1"
-        android:layout_alignLeft="@+id/button9"
-        android:layout_above="@+id/button9"
-        android:layout_alignRight="@+id/button9" />
-
-    <ImageView
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:id="@+id/imageView"
-        android:layout_above="@+id/button7"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp" />
-
-    <ImageView
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:id="@+id/imageView2"
-        android:src="@drawable/Prosecco_in_cans"
-        android:layout_below="@+id/button5"
-        android:layout_alignBottom="@+id/imageView"
+        android:text="electricity"
+        android:id="@+id/button2"
+        android:layout_gravity="center|top"
+        android:layout_above="@+id/imageView4"
         android:layout_alignRight="@+id/imageView"
         android:layout_alignEnd="@+id/imageView" />
 
-    <ImageView
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:id="@+id/imageView3"
-        android:src="@drawable/electricity"
-        android:layout_above="@+id/button7"
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="lights"
+        android:id="@+id/button"
+        android:layout_gravity="left|top"
+        android:layout_above="@+id/imageView4"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/button4"
-        android:layout_alignRight="@+id/button7"
-        android:layout_alignEnd="@+id/button7" />
+        android:layout_alignParentStart="true" />
+
+    <Chronometer
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/chronometer3"
+        android:layout_below="@+id/button3"
+        android:layout_alignLeft="@+id/button3"
+        android:layout_alignStart="@+id/button3"
+        android:layout_marginLeft="35dp"
+        android:layout_marginStart="35dp" />
 
     <ImageView
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:id="@+id/imageView4"
-        android:layout_below="@+id/button"
-        android:layout_toStartOf="@+id/button2"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:id="@+id/imageView5"
+        android:src="@drawable/plant"
+        android:layout_above="@+id/button9"
+        android:layout_alignRight="@+id/button9"
+        android:layout_alignEnd="@+id/button9"
+        android:layout_alignLeft="@+id/button6"
+        android:layout_alignStart="@+id/button6" />
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:id="@+id/imageView6"
+        android:layout_above="@+id/button5"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
-        android:src="@drawable/cars"
-        android:layout_above="@+id/button4"
-        android:layout_alignRight="@+id/button4"
-        android:layout_alignEnd="@+id/button4" />
+        android:src="@drawable/water" />
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:id="@+id/imageView7"
+        android:src="@drawable/bike"
+        android:layout_below="@+id/button3"
+        android:layout_alignLeft="@+id/button6"
+        android:layout_alignStart="@+id/button6"
+        android:layout_alignRight="@+id/button6"
+        android:layout_alignEnd="@+id/button6" />
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:id="@+id/imageView8"
+        android:src="@drawable/paper"
+        android:layout_alignTop="@+id/imageView2"
+        android:layout_alignRight="@+id/button7"
+        android:layout_alignEnd="@+id/button7"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:id="@+id/imageView9"
+        android:src="@drawable/appliances"
+        android:layout_alignBottom="@+id/imageView3"
+        android:layout_alignRight="@+id/imageView7"
+        android:layout_alignEnd="@+id/imageView7"
+        android:layout_alignLeft="@+id/button3"
+        android:layout_alignStart="@+id/button3"
+        android:layout_alignTop="@+id/imageView3"
+        android:layout_alignParentEnd="false" />
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:id="@+id/imageView10"
+        android:contentDescription="String"
+        android:src="@drawable/lights"
+        android:layout_alignTop="@+id/imageView3"
+        android:layout_alignRight="@+id/button"
+        android:layout_alignEnd="@+id/button" />
 
 </RelativeLayout>
