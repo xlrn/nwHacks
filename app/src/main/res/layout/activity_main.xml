@@ -65,6 +65,7 @@
     <ToggleButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+<<<<<<< HEAD
         android:text="New ToggleButton"
         android:id="@+id/toggleButton"
         android:layout_above="@+id/button3"
@@ -128,5 +129,12 @@
         android:layout_above="@+id/ratingBar"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
+=======
+        android:id="@+id/chronometer"
+        android:layout_below="@+id/textView"
+        android:layout_toRightOf="@+id/button"
+        android:layout_toEndOf="@+id/button"
+        android:layout_marginTop="65dp" />
+>>>>>>> fe1db0b174b181bd61f97c3060ee1ee2b35d5c4f
 
 </RelativeLayout>
