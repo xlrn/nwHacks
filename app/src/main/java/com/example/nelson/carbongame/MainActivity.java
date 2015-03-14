@@ -9,13 +9,17 @@ import android.widget.Button;
 import android.widget.Chronometer;
 import java.util.concurrent.TimeUnit;
 public class MainActivity extends ActionBarActivity {
+
+
     private Chronometer chronometer;
     private long startingTime;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         chronometer = (Chronometer) findViewById(R.id.chronometer);
+        startChronometer();
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -26,7 +30,7 @@ public class MainActivity extends ActionBarActivity {
 
     public void buttonOnClick (View v ) {
         Button button = (Button) v;
-        startActivity (new Intent(getApplicationContext(), Activity2.class));
+        startActivity(new Intent(getApplicationContext(), Transit.class));
 
     }
     @Override
