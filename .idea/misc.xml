@@ -4,8 +4,11 @@
     <entry_points version="2.0" />
   </component>
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_7" assert-keyword="true" jdk-15="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
 =======
+>>>>>>> be30f8536ed766a0d49c44d8973969e00ea3b0a1
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_7" assert-keyword="true" jdk-15="true" project-jdk-name="1.7" project-jdk-type="JavaSDK">
 >>>>>>> 68f329ea0a60a46e77d87486389648ce7c846075
     <output url="file://$PROJECT_DIR$/build/classes" />
