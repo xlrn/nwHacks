@@ -31,45 +31,48 @@ public class TaskManager {
         availTasks.put("electronics", electronics);
 
         ArrayList<Integer> appliances = new ArrayList();
-        appliances.add(300);
-        appliances.add(-1);
+        appliances.add(180);
+        appliances.add(-3);
         availTasks.put("appliances", appliances);
 
         ArrayList<Integer> car = new ArrayList();
-        car.add(300);
-        car.add(-1);
+        car.add(0);
+        car.add(-10);
         availTasks.put("car", car);
 
         ArrayList<Integer> water = new ArrayList();
-        water.add(300);
-        water.add(-1);
+        water.add(270);
+        water.add(-6);
         availTasks.put("water", water);
 
         ArrayList<Integer> bus = new ArrayList();
-        bus.add(300);
-        bus.add(-1);
+        bus.add(0);
+        bus.add(3);
         availTasks.put("bus", bus);
 
         ArrayList<Integer> bike = new ArrayList();
-        bike.add(300);
-        bike.add(-1);
+        bike.add(0);
+        bike.add(5);
         availTasks.put("bike", bike);
 
         ArrayList<Integer> walk = new ArrayList();
-        walk.add(300);
-        walk.add(-1);
+        walk.add(0);
+        walk.add(6);
         availTasks.put("walk", walk);
 
         ArrayList<Integer> paper = new ArrayList();
-        paper.add(300);
+        
+        paper.add(1);
         availTasks.put("paper", paper);
 
         ArrayList<Integer> cans = new ArrayList();
-        cans.add(300);
+
+        cans.add(2);
         availTasks.put("cans", cans);
 
         ArrayList<Integer> plant = new ArrayList();
-        plant.add(300);
+
+        plant.add(5);
         availTasks.put("plant", plant);
     }
 
