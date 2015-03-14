@@ -93,15 +93,18 @@ public class MainActivity extends ActionBarActivity {
     public void PaperButton (View v) {
         Button button = (Button) v;
         Score.calculateScore(2);
+        setTheScore();
     }
 
     public void CansButton (View v) {
         Button button = (Button) v;
         Score.calculateScore(10);
+        setTheScore();
     }
 
     public void PlantsButton (View v) {
         Button button = (Button) v;
         Score.calculateScore(15);
+        setTheScore();
     }
 }
