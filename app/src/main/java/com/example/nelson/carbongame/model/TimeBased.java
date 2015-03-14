@@ -18,6 +18,8 @@ public abstract class TimeBased {
         this.timer = new Timer();
     }
 
+
+
     public int calcScore(int timePassed) {
         return (init + rate * timePassed);
     }
