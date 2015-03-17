@@ -7,25 +7,25 @@
     tools:context="com.example.nelson.carbongame.Activity2"
     android:id="@+id/name"
     android:background="#FFFFFF">
-
     <TextView android:text="TRANSPORTATION" android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/textView2"
         android:textIsSelectable="false"
-        android:textSize="40dp"
+        android:textSize="34dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:textColor="#000000" />
-
+        android:textColor="#000000"
+        android:singleLine="true" />
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="BUS"
         android:id="@+id/button10"
-        android:layout_above="@+id/chronometer2"
+        android:layout_above="@+id/chronometer11"
         android:layout_alignLeft="@+id/button11"
-        android:layout_alignStart="@+id/button11" />
-
+        android:layout_alignStart="@+id/button11"
+        android:onClick="BusButton"
+        android:singleLine="true" />
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -33,45 +33,57 @@
         android:id="@+id/button11"
         android:layout_centerVertical="true"
         android:layout_alignLeft="@+id/button12"
-        android:layout_alignStart="@+id/button12" />
-
+        android:layout_alignStart="@+id/button12"
+        android:onClick="BikeButton"
+        android:singleLine="true" />
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="WALK"
         android:id="@+id/button12"
-        android:layout_below="@+id/chronometer3"
+        android:layout_below="@+id/chronometer12"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="60dp" />
-
+        android:layout_marginTop="60dp"
+        android:onClick="WalkButton"
+        android:singleLine="true" />
     <Chronometer
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/chronometer2"
+        android:id="@+id/chronometer11"
         android:layout_marginBottom="46dp"
         android:textSize="20dp"
         android:layout_above="@+id/button11"
-        android:layout_alignLeft="@+id/chronometer3"
-        android:layout_alignStart="@+id/chronometer3"
-        android:textColor="#000000" />
-
+        android:layout_alignLeft="@+id/chronometer12"
+        android:layout_alignStart="@+id/chronometer12"
+        android:textColor="#000000"
+        android:singleLine="true" />
     <Chronometer
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/chronometer3"
+        android:id="@+id/chronometer12"
         android:layout_below="@+id/button11"
         android:layout_centerHorizontal="true"
         android:textSize="20dp"
-        android:textColor="#000000" />
-
+        android:textColor="#000000"
+        android:singleLine="true" />
     <Chronometer
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/chronometer4"
+        android:id="@+id/chronometer13"
         android:layout_alignTop="@+id/button12"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="43dp"
         android:textSize="20dp"
-        android:textColor="#000000" />
-
+        android:textColor="#000000"
+        android:singleLine="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="SCORE"
+        android:id="@+id/scoretext2"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:singleLine="true" />
 </RelativeLayout>
